@@ -22,8 +22,8 @@ jobs:
     - make install
   
   test:
-     - make lint-circleci
-     - make test-circleci
+   - make lint-circleci
+   - make test-circleci
 			     
 			     
 workflow:
