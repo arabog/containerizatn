@@ -1,1 +1,13 @@
-# hello
+machine:
+  python:
+    version: 3.6.4
+
+dependencies:
+  pre:
+    - make install
+
+test:
+  pre:
+    - make lint-circleci
+    - make test-circleci
+

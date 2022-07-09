@@ -54,5 +54,9 @@ make install
 
 make lint
 
+mkdir .circleci
+
+touch .circleci/config.yml
+
 push to git
 
