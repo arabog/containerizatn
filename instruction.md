@@ -19,6 +19,26 @@ make start-api
 Hint
 To run this code you will need Docker installed. Remember the suggestion about using AWS Cloud9? It has Docker already installed for you. This may be a time to try this out and see if this workflow simplifies the way you work.
 
+environment/containerizatn_docker
+create a virtual env and activate
+python3 -m  venv ~/.containerization_docker 
+source ~/.containerization_docker/bin/activate
 
+which python3
 
+deactivate d virutal env
 
+pwd
+
+cr8 alias:
+nano ~/.bashrc
+
+add:
+alias containerizatn_docker="cd /home/ec2-user/environment/containerizatn_docker && source ~/.containerization_docker/bin/activate"
+
+source ~/.bashrc
+
+cd /tmp
+
+type:
+alias
