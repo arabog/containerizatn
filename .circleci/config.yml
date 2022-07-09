@@ -17,13 +17,11 @@ jobs:
  build:
   docker:
    - image: circleci/python:3.6.4
-			
-  dependencies:
-   pre:
+  
+  steps:
     - make install
-				
-   test:
-    pre:
+  
+  test:
      - make lint-circleci
      - make test-circleci
 			     
