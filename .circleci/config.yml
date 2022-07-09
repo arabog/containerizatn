@@ -14,21 +14,21 @@
 version: 2.1
 
 jobs:
-	build:
-		docker:
-			- image: circleci/python:3.6.4
+ build:
+  docker:
+   - image: circleci/python:3.6.4
 			
-		dependencies:
-			pre:
-				- make install
+  dependencies:
+   pre:
+    - make install
 				
-		test:
-			pre:
-    			- make lint-circleci
-			     - make test-circleci
+   test:
+    pre:
+     - make lint-circleci
+     - make test-circleci
 			     
 			     
 workflow:
-	deploy_app:
-		jobs:
-			- build
+ deploy_app:
+  jobs:
+   - build
