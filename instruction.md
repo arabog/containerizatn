@@ -20,13 +20,15 @@ Hint
 To run this code you will need Docker installed. Remember the suggestion about using AWS Cloud9? It has Docker already installed for you. This may be a time to try this out and see if this workflow simplifies the way you work.
 
 environment/containerizatn_docker
-create a virtual env and activate
-python3 -m  venv ~/.containerization_docker 
-source ~/.containerization_docker/bin/activate
+create a virtual env and activate(mking it automatic)
+python3 -m venv ~/.containerizatn
+
+source ~/.containerizatn/bin/activate
 
 which python3
 
-deactivate d virutal env
+deactivate d virutal env:
+deactivate
 
 pwd
 
@@ -34,11 +36,23 @@ cr8 alias:
 nano ~/.bashrc
 
 add:
-alias containerizatn_docker="cd /home/ec2-user/environment/containerizatn_docker && source ~/.containerization_docker/bin/activate"
+alias containerizatn="cd /home/ec2-user/environment/containerizatn && source ~/.containerizatn/bin/activate"
 
+<!--voclabs:~/environment/containerizatn (main) $ -->
 source ~/.bashrc
 
 cd /tmp
 
 type:
 alias
+
+type:
+containerizatn
+<!--dse automatically activate virtual env-->
+
+make install
+
+make lint
+
+push to git
+
