@@ -24,8 +24,7 @@ jobs:
   test:
    - make lint-circleci
    - make test-circleci
-			     
-			     
+   
 workflow:
  deploy_app:
   jobs:
